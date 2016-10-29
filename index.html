@@ -50,7 +50,7 @@
 			var api_url = "https://toysfortots.herokuapp.com/"
 
 		  (function($) {
-			$.getJSON(api_url + 'read_all', function (data) {
+			$.getJSON(api_url + "read_all", function (data) {
 					var outArray = [];
 					$.each(data, function(index){
 							outArray.push(index);
@@ -138,7 +138,7 @@
 
 		function countyFunction(){
 			var coordinator ="";
-			$.getJSON(api_url + 'read_all', function( data ){
+			$.getJSON(api_url + "read_all", function( data ){
 				var county = $('#county').val().trim();
 				var dataKey = data[county];
 				if(typeof dataKey === 'undefined'){
